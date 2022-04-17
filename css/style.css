@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: underline;/*le dá el subrayado*/
+    color:blue;/*le dá el color azul*/
+    cursor:pointer;/*le dá el cursor puntero*/
+}
+
+header{
+    padding-left: 45%;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    background-color: yellow;
+}
+
+.logito{
+    padding-bottom: 15px;
+    padding-left: 9%;
+    width: 100px;
+    height: 45px;
+}
+
+.subtitulos{
+    padding-top: 30px;
+    padding-left: 49%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 200px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container{
+    width: 700px;
+    margin: 20px;
+}
+
+.galeria{
+    width: 400px;
+    height: 400px;
+}
+
+.zonas{
+    padding-left: 43%;
+}
+
+.zonas2{
+    padding-top: 30px;
+    padding-left: 43%;
+    padding-bottom: 30px;
+}
+
+.punteo{
+    border-style: groove;
+    background-color: rgb(0, 255, 0);
+    color: black;
+    font-weight: bolder;
+}
+
+.secciones{
+    padding-left: 20%;
+}
+
+.productos{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    background-color: rgb(52, 233, 52);
+}
+
+.creditos{
+    font-size: x-large;
+}
+
+.mapa{
+    padding-left: 50%;
+}
