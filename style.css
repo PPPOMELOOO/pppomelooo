@@ -192,6 +192,17 @@ header .container .hamb
     padding-right: 90px;
 }
 
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: #00ff33;
+    border-color: #00961e;
+    font-weight: 800;
+}
+
+.btn-primary:hover{
+    background-color: #00450e;
+}
+
 .footer-bottom{
     background-color: #00ff33;
 }
