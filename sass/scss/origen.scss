@@ -1,0 +1,28 @@
+/*esto es un comentario de bloque de CSS PURO*/
+
+//esto es un comentario de linea en scss
+
+@import "scss/bootstrap.scss"
+
+div {
+    background-color: white;
+    color:  red;
+    border:  1px solid pink;
+    ul {
+        list-style-type: disc;
+    }
+    
+        a{
+            text-decoration: none;
+        }
+        
+            li {
+            background-color: green;
+            padding: 20px;
+            border: 1px solid blue; 
+            }
+}
+
+body{
+    width: 100%;
+}
