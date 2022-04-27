@@ -1,0 +1,92 @@
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #3300ff;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+	padding-top: 18px;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #ffffff;
+  }
+  
+  .cta
+  {
+    padding: 12px 25px;
+    color: #ff9100;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+
+  .cta.fas
+  {
+    padding: 12px 25px;
+    color: #000000;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff9100;
+  }
+
+  header .container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .container .logo
+{
+	width: 200px;
+}
+
+header .container nav a
+{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+header .container .hamb
+{
+	display: none;
+	position: relative;	
+}

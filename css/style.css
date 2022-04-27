@@ -1,89 +1,335 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration: underline;/*le dá el subrayado*/
-    color:blue;/*le dá el color azul*/
-    cursor:pointer;/*le dá el cursor puntero*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #3300ff;
 }
 
-header{
-    padding-left: 45%;
-    font-family: 'Anton', sans-serif;
-    font-size: 40px;
-    background-color: yellow;
+.logo {
+  cursor: pointer;
 }
 
-.logito{
-    padding-bottom: 15px;
-    padding-left: 9%;
-    width: 100px;
-    height: 45px;
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+  padding-top: 18px;
 }
 
-.subtitulos{
-    padding-top: 30px;
-    padding-left: 49%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+.nav__links {
+  list-style: none;
+  display: flex;
 }
 
-.carrusel{
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-    height: 200px;
-    flex-wrap: nowrap;
-    justify-content: center;
+.nav__links li {
+  padding: 0px 20px;
 }
 
-.container{
-    width: 700px;
-    margin: 20px;
+.nav__links li a {
+  transition: color 0.3s ease 0s;
 }
 
-.galeria{
-    width: 400px;
-    height: 400px;
+.nav__links li a:hover {
+  color: #ffffff;
 }
 
-.zonas{
-    padding-left: 43%;
+.cta {
+  padding: 12px 25px;
+  color: #ff9100;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
 }
 
-.zonas2{
-    padding-top: 30px;
-    padding-left: 43%;
-    padding-bottom: 30px;
+.cta.fas {
+  padding: 12px 25px;
+  color: #000000;
+  background-color: rgb(255, 187, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
 }
 
-.punteo{
-    border-style: groove;
-    background-color: rgb(0, 255, 0);
-    color: black;
-    font-weight: bolder;
+.cta:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ff9100;
 }
 
-.secciones{
-    padding-left: 20%;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.productos{
-    width: 100px;
-    height: 100px;
+header .container .logo {
+  width: 200px;
 }
 
-footer{
-    background-color: rgb(52, 233, 52);
+header .container nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 15px;
 }
 
-.creditos{
-    font-size: x-large;
+header .container .hamb {
+  display: none;
+  position: relative;
 }
 
-.mapa{
-    padding-left: 50%;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
 }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carrusel {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid {
+  margin: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.grid > article {
+  background: rgb(255, 204, 93);
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.grid > article:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text h3 {
+  text-transform: uppercase;
+}
+
+.text button {
+  background: rgb(255, 204, 93);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.precio {
+  padding-top: 10px;
+  color: #3300ff;
+  font-size: x-large;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  padding-right: 90px;
+}
+
+.btn-primary {
+  color: rgb(0, 0, 0);
+  background-color: #00ff33;
+  border-color: #00961e;
+  font-weight: 800;
+}
+
+.btn-primary:hover {
+  background-color: #00450e;
+}
+
+.boton {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: none;
+}
+
+.boton.boton-blanco {
+  background-color: rgb(0, 255, 8);
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.boton.boton-negro {
+  background-color: black;
+  color: rgb(255, 204, 93);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.boton.boton-negro:hover {
+  background-color: rgb(255, 204, 93);
+  color: black;
+}
+
+.seccion {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.cuadrado-perfecto {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.cuadrado-perfecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.columna-25 {
+  width: 25%;
+}
+
+.columna-33 {
+  width: 33.33%;
+}
+
+.columna-50 {
+  width: 50%;
+}
+
+.columna-41 {
+  width: 41.33%;
+}
+
+.empujar-50 {
+  margin-left: 50%;
+}
+
+.empujar-58 {
+  margin-left: 58.33%;
+}
+
+.empujar-66 {
+  margin-left: 66.66%;
+}
+
+.footer-bottom {
+  background-color: #00ff33;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 -10px;
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  color: #000000;
+  text-decoration: none;
+  font-size: large;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 -10px;
+  color: #252525;
+}
+
+.footer-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.footer-menu li:after {
+  content: "/";
+  margin-left: 10px;
+}
+
+.footer-menu li:last-child:after {
+  display: none;
+}
+
+.footer-menu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
